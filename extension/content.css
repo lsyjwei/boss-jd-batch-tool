@@ -1,0 +1,40 @@
+#boss-jd-collect-btn {
+  position: fixed;
+  right: 24px;
+  bottom: 96px;
+  z-index: 999999;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  background: #00bebd;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-family: system-ui, sans-serif;
+}
+
+#boss-jd-collect-btn:hover {
+  background: #00a6a7;
+}
+
+.boss-jd-toast {
+  position: fixed;
+  right: 24px;
+  bottom: 148px;
+  z-index: 999999;
+  padding: 8px 14px;
+  background: rgba(0, 0, 0, 0.82);
+  color: #fff;
+  border-radius: 6px;
+  font-size: 13px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+  font-family: system-ui, sans-serif;
+}
+
+.boss-jd-toast.show {
+  opacity: 1;
+}

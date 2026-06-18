@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "BOSS JD 收集器",
+  "version": "0.2.0",
+  "description": "收集 BOSS 直聘岗位 JD，批量导出到 Cursor boss-jd-batch-tool",
+  "permissions": ["storage", "downloads"],
+  "host_permissions": ["https://www.zhipin.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "BOSS JD 收集",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.zhipin.com/job_detail/*"],
+      "js": ["extractor.js", "content.js"],
+      "css": ["content.css"],
+      "run_at": "document_idle"
+    }
+  ]
+}

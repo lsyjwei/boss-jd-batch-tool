@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>BOSS JD 收集</h1>
+    <span id="count" class="count">0</span>
+  </header>
+  <p class="hint">在岗位页点「＋ 收集 JD」，攒够后批量导出到 inbox。</p>
+  <ul id="list"></ul>
+  <div class="actions">
+    <button id="export" class="primary">批量导出 JSON</button>
+    <button id="clear" class="danger">清空列表</button>
+  </div>
+  <p id="status" class="status"></p>
+  <script src="popup.js"></script>
+</body>
+</html>

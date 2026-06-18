@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 360px;
+  padding: 12px;
+  font-family: system-ui, sans-serif;
+  font-size: 13px;
+  color: #1a1a1a;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+.count {
+  background: #00bebd;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 8px;
+  border-radius: 10px;
+}
+
+.hint {
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+#list {
+  list-style: none;
+  max-height: 280px;
+  overflow-y: auto;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+#list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 8px 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+#list li:last-child {
+  border-bottom: none;
+}
+
+.job-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.job-title {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.job-meta {
+  color: #888;
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+button.remove {
+  border: none;
+  background: none;
+  color: #999;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  padding: 0 4px;
+}
+
+button.remove:hover {
+  color: #e44;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+button.primary {
+  background: #00bebd;
+  color: #fff;
+  border-color: #00bebd;
+}
+
+button.primary:hover {
+  background: #00a6a7;
+}
+
+button.danger {
+  color: #c0392b;
+}
+
+.status {
+  margin-top: 8px;
+  color: #00a6a7;
+  font-size: 12px;
+  min-height: 16px;
+}
+
+.empty {
+  padding: 16px;
+  text-align: center;
+  color: #999;
+}

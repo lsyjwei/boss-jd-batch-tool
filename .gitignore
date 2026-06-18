@@ -1,0 +1,21 @@
+# 本地数据与构建产物
+input/inbox/*
+!input/inbox/README.md
+input/html/*
+!input/html/.gitkeep
+output/
+__pycache__/
+*.pyc
+.env
+.venv/
+venv/
+*.log
+
+# 编辑器
+.idea/
+.vscode/
+*.swp
+
+# OS
+Thumbs.db
+.DS_Store

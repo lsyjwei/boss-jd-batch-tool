@@ -12,7 +12,7 @@
 ## 快速开始
 
 ```powershell
-git clone https://github.com/<your-user>/boss-jd-batch-tool.git
+git clone https://github.com/lsyjwei/boss-jd-batch-tool.git
 cd boss-jd-batch-tool
 pip install -r requirements.txt
 ```
